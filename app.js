@@ -14,6 +14,13 @@ const express           = require('express')
     , { stripTags }     = require('./helpers/hbs')
 
 
+/***************************
+ * Port heroku / localhost *
+ ***************************/
+
+const port              = process.env.PORT || 3000
+
+
     
 /*********************
  * Import Controller *
@@ -149,7 +156,7 @@ app.use((req, res) => {
 })
 
 //nodemon 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log("le serveur tourne sur le port 3000");
 
 })

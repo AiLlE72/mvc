@@ -49,9 +49,14 @@ const auth                  = require("./Middleware/auth")
 /************
  * database *
  ************/
+<<<<<<< HEAD
 
  // changement de base de donnnée
 const urlDb         = 'mongodb://localhost:27017/blog'
+=======
+// const urlDb         = 'mongodb://localhost:27017/blog'
+const urlDb         = 'mongodb+srv://admin:admin@cluster0-bmsok.mongodb.net/test?retryWrites=true&w=majority '
+>>>>>>> 8f01917bc15c267be80626aa0a95ce6d4573f070
     , mongoStore    = MongoStore(expressSession)
 
 mongoose.connect(urlDb, {

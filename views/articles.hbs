@@ -1,0 +1,16 @@
+<section class="section">
+    <div class="container">
+        <figure class="image is-3by2">
+            <img src="{{article.image}}" alt="Placeholder image">
+        </figure>
+        <h1 class="title">{{article.title}}</h1>
+        <p>{{ stripTags article.content}}</p>
+    </div>
+    {{#if user}}
+    <div class="buttons is-centered">
+        <a href="/articles/edit/{{article._id}}">
+        <button class="button is-danger">Editer l'article</button>
+        </a>   
+    </div>
+    {{/if}}
+</section>

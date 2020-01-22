@@ -49,6 +49,8 @@ const auth                  = require("./Middleware/auth")
 /************
  * database *
  ************/
+
+ // changement de base de donnnée
 const urlDb         = 'mongodb://localhost:27017/blog'
     , mongoStore    = MongoStore(expressSession)
 
